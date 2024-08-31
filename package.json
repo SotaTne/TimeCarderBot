@@ -1,0 +1,29 @@
+{
+  "name": "time_carder_bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "set-cmd": "node --env-file=.env dist/deploy-commands.js",
+    "start-bot": "node --env-file=.env dist/index.js",
+    "run": "npm run build && npm run set-cmd && npm run start-bot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^14.15.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.5.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.3.0"
+  }
+}
